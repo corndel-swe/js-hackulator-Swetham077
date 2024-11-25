@@ -6,11 +6,11 @@
  * subtract(-2, 4) => 6
  */
 function subtract(x, y) {
-  if (x < y) {
+  if (x <= y) {
     return y - x
   }
 
-  if (y < x) {
+  if (y <= x) {
     return x - y
   }
 }
