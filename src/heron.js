@@ -4,7 +4,8 @@
  * https://en.wikipedia.org/wiki/Heron%27s_formula
  */
 function heron(a, b, c) {
-  return Math.sqrt(/*🤷*/)
+  const s = (a + b + c) / 2; // Calculate the semi-perimeter
+  return Math.sqrt(s * (s - a) * (s - b) * (s - c));
 }
 
 export default heron
